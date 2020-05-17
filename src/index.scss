@@ -467,7 +467,7 @@
 
 .cards-wrapper {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 1px;
     display: flex;
 
 
@@ -476,7 +476,7 @@
         width: 50%;
         height: 450px;
         background: url(./img/alcohol.jpg) 0 0 /cover no-repeat;
-        margin: 0 20px;
+        margin: 0 1px 0 0;
         clip-path: polygon(0% 0%, 45% 0%, 50% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%);
         transition: clip-path 0.3s linear;
 
@@ -488,7 +488,6 @@
     &__recipes-card {
         width: 50%;
         height: 450px;
-        margin: 0 20px 0 0;
         background: url(./img/cooking-meat.png) center/cover no-repeat;
         clip-path: polygon(0% 0%, 0% 0%, 50% 0%, 55% 0%, 100% 0%, 100% 100%, 0% 100%);
         transition: clip-path 0.3s linear;
@@ -560,26 +559,18 @@
 .moonshine-card__line-first, .recipes-card__line-first{
     top: 0;
 }
-.moonshine-card__line-second, .moonshine-card__line-third,
-.recipes-card__line-second, .recipes-card__line-third{
+.moonshine-card__line-second,
+.recipes-card__line-second{
     top: 50%;
     transform: translateY(-50%);
 }
-.moonshine-card__line-fourth, .recipes-card__line-fourth{
+.moonshine-card__line-third, .recipes-card__line-third{
     bottom: 0;
 }
 .moonshine-card_active .moonshine-card__line-first, .moonshine-card_active .moonshine-card__line-fourth,
 .recipes-card_active .recipes-card__line-first, .recipes-card_active .recipes-card__line-fourth{
     opacity: 0;
 }
-// .moonshine-card_active .moonshine-card__line-second,
-// .recipes-card_active .recipes-card__line-second{
-//     transform: translateY(-50%) rotate(45deg);
-// }
-// .moonshine-card_active .moonshine-card__line-third,
-// .recipes-card_active .recipes-card__line-third{
-//     transform: translateY(-50%) rotate(-45deg);
-// }
 
 //----------------------------------------and cards-wrapper----------------------------------------//
 
@@ -657,14 +648,6 @@
     transform: translateX(0);
 }
 
-// .moonshine-menu {
-
-// }
-
-// .recipes-menu {
-
-// }
-
 //------------------------and moonshine-menu ,,, recipes-menu------------------------------------//
 
 //------------------------------------footer----------------------------------------------//
@@ -673,7 +656,7 @@ footer {
     width: 100%;
     height: 150px;
     background-color: $gray;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 //---------------------------------and footer----------------------------------------------//
