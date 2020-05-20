@@ -19,9 +19,12 @@ html(lang="ru")
                         path(d="M21.623,76.516c0,0-7.155-9.092-6.397-22.729c0.757-13.636,4.04-20.791,4.377-26.515c0.336-5.724,0-3.282-2.862-2.861  c-2.862,0.42-2.947-1.179-5.135-1.6c0,0-3.702-1.429-5.723-0.672c0,0-2.947,1.179-4.377,13.468S1.673,59.68,4.199,65.151  s4.882,11.785,9.933,16.751C19.182,86.869,31.64,96.632,27.263,100C27.263,100,39.299,99.495,21.623,76.516z" fill="#D90000" style="fill: rgb(217, 0, 0);")
                         path(d="M14.032,22.443c0.884,1.436,4.17,0.552,4.167-0.126c-0.001-0.097-0.434-0.237-0.568-0.316c0,0-4.23,0.126-1.768-9.533  C18.325,2.809,26.153,0.284,26.153,0.284s-6.187-2.146-9.912,5.366s-3.851,7.955-4.419,9.912c-0.568,1.957-0.505,3.914-5.051,4.987  C6.772,20.549,13.022,20.801,14.032,22.443z" fill="#D90000" style="fill: rgb(256, 256, 256);")
                 .line__social-wrapper
-                    i.fab.fa-vk
-                    i.fab.fa-instagram
-                    i.fab.fa-odnoklassniki-square
+                    i.vk
+                        a.fab.fa-vk(href="#")
+                    i.instagram
+                        a.fab.fa-instagram(href="#")
+                    i.odnoklassniki
+                        a.fab.fa-odnoklassniki-square(href="#")
             .box
 
         .page__content
@@ -69,7 +72,6 @@ html(lang="ru")
                         span.moonshine-card__line.moonshine-card__line-second
                         span.moonshine-card__line.moonshine-card__line-third
                     h2.moonshine-card__title гоним
-                    p.moonshine-card__description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sunt?
 
 
                 .cards-wrapper__recipes-card.recipes-card
@@ -78,7 +80,6 @@ html(lang="ru")
                         span.recipes-card__line.recipes-card__line-second
                         span.recipes-card__line.recipes-card__line-third
                     h2.recipes-card__title готовим
-                    p.recipes-card__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laboriosam quod sit illo a neque?
 
             section.moonshine-menu
                 a.moonshine-menu__closebtn(href="javascript:void(0)") &times
