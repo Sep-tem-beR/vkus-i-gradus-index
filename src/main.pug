@@ -63,25 +63,44 @@ html(lang="ru")
                             br
                             span.recipes__line-2 вкусной
                             br
-                            span.recipes__line-3 закуски
+                            span.recipes__line-3 закуски    
 
 
-            section.cards-wrapper
-
-                .cards-wrapper__moonshine-card.moonshine-card
-                    .moonshine-card__burger
-                        span.moonshine-card__line.moonshine-card__line-first
-                        span.moonshine-card__line.moonshine-card__line-second
-                        span.moonshine-card__line.moonshine-card__line-third
-                    h2.moonshine-card__title гоним
+            section.page-background
+                .page-background__moonshine
+                    p.moonshine-card__title moonshine
+                .page-background__recipes
+                    p.recipes-card__title meat
 
 
-                .cards-wrapper__recipes-card.recipes-card
-                    .recipes-card__burger
-                        span.recipes-card__line.recipes-card__line-first
-                        span.recipes-card__line.recipes-card__line-second
-                        span.recipes-card__line.recipes-card__line-third
-                    h2.recipes-card__title готовим
+            section.moonshine-card
+                .moonshine-card__content
+                    p.moonshine-card__header Называете ли вы его шемурдяк, самопляс, косорыловка или 
+                                             | просто самогон - его мятежная история
+                                             | и неоднозначное настоящее делают его адским напитком.
+                    .moonshine-card__button
+                        .moonshine-card__button-one
+                        .moonshine-card__button-two
+                            p.moonshine-card__btnText-two гоним
+                        
+                .moonshine-card__image-wrapper
+                    .moonshine-card__image
+
+            section.recipes-card
+                .recipes-card__image-wrapper
+                    .recipes-card__image
+                .recipes-card__content
+                    p.recipes-card__header  &mdash; Позвольте предложить Вам маленький
+                                            br
+                                            | &nbsp;&nbsp;&nbsp;&nbsp; кусочек ростбифа. 
+                                            br 
+                                            |&mdash; Спасибо, но кусочек можно и побольше!
+                    p.recipes-card__autor   Х/ф "Здравствуйте я ваша тётя"              
+                    .recipes-card__button
+                        .recipes-card__button-one
+                        .recipes-card__button-two
+                            p.recipes-card__btnText-two готовим
+        
 
             section.moonshine-menu
                 a.moonshine-menu__closebtn(href="javascript:void(0)") &times
