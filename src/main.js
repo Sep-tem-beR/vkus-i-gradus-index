@@ -32,3 +32,12 @@ import './index.scss'
         burgerMenu.classList.remove('recipes-menu_active');
     });
 }());
+
+//---------------------------header_parallax-------------------------//
+
+function header_parallax(event) {
+    let a = document.querySelector('.header__background');
+    a.style.transform = 'translateX(' + event.clientX/100 + 'px)' + " " + 'translateY(' + event.clientY/100 + 'px)';
+};
+
+document.querySelector('.header').addEventListener('mousemove', header_parallax);

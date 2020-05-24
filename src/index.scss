@@ -68,11 +68,21 @@
 .header {
     width: 100%;
     height: 800px;
-    box-sizing: border-box;
-    background: linear-gradient(to right bottom,  $gray, transparent), url(./img/natiurmort-butylka-samogon-khleb-chesnok-salo-koloski.jpg) center/cover no-repeat;
+    overflow: hidden;
     position: relative;
 
-    &__wrapper {
+    &__background {
+        width: 110%;
+        height: 110%;
+        box-sizing: border-box;
+        background: linear-gradient(to right bottom,  $gray, transparent), url(./img/natiurmort-butylka-samogon-khleb-chesnok-salo-koloski.jpg) center/cover no-repeat;
+        position: relative;
+        top: -10%;
+        left: -10%;
+    }
+
+
+    &__mask {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -125,7 +135,6 @@
         height: 150px;
         text-align: center;
         align-self: center;
-        color: red;
         color: transparent;
         background-image: url(https://media.giphy.com/media/6wpHEQNjkd74Q/giphy.gif);
         -webkit-background-clip: text;
