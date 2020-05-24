@@ -33,7 +33,7 @@ import './index.scss'
     });
 }());
 
-//---------------------------header_parallax-------------------------//
+//---------------------------header_parallax---------------------------//
 
 function header_parallax(event) {
     let a = document.querySelector('.header__background');
@@ -41,3 +41,12 @@ function header_parallax(event) {
 };
 
 document.querySelector('.header').addEventListener('mousemove', header_parallax);
+
+
+
+function header_title_parallax(event) {
+    let a = document.querySelector('.header__title.title');
+    a.style.transform = 'translateX(' + event.clientX/-50 + 'px)' + " " + 'translateY(' + event.clientY/-50 + 'px)';
+};
+
+document.querySelector('.header').addEventListener('mousemove', header_title_parallax);
