@@ -534,7 +534,8 @@
     position: absolute;
     transform: rotate(90deg);
     transform-origin: 0 0;
-    outline: 1px solid green;
+    // outline: 1px solid ;
+    box-shadow: 0 0 40px $gray;
 }
 
 .moonshine-card__title {
@@ -545,6 +546,7 @@
 .recipes-card__title {
     top: 30%;
     left: 850px;
+    padding: 0 20px;
 }
 
 
@@ -558,7 +560,7 @@
 .moonshine-card {
     width: 100%;
     height: 60vh;
-    background-color: $white-transparent;
+    background: linear-gradient( 90deg, $white-transparent 20%, transparent);
     box-shadow: 0 0 40px $gray;
     margin: 150px 0;
     display: flex;
@@ -656,7 +658,7 @@
 .recipes-card {
     width: 100%;
     height: 60vh;
-    background-color: $white-transparent;
+    background: linear-gradient( 270deg, $white-transparent 20%, transparent);
     box-shadow: 0 0 40px $gray;
     margin: 150px 0;
     display: flex;
