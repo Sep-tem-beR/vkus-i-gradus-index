@@ -586,6 +586,9 @@
         overflow: hidden;
         cursor: pointer;
         border-radius: 3px;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
 
         &:hover .moonshine-card__button-one  {
             left: 0;
@@ -688,6 +691,9 @@
         overflow: hidden;
         cursor: pointer;
         border-radius: 3px;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
 
         &:hover .recipes-card__button-one  {
             left: 0;
