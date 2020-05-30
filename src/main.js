@@ -63,3 +63,23 @@ window.addEventListener('scroll', function() {
     let a = document.querySelector('.recipes-card__title');
     a.style.textShadow = pageYOffset/100 + 'px' + ' ' + pageYOffset/100 + 'px' + ' ' + pageYOffset/200 + 'px' +' '  + 'hsl(0, 0%, 50%)';
 });
+
+//------------------------------appearance of elements-----------------------//
+
+
+window.addEventListener('scroll', function() {
+    const elem1 = document.querySelector('.moonshine-card');
+    const elem2 = document.querySelector('.recipes-card');
+    const clientHeight = document.documentElement.clientHeight;
+    const heightToElem1 = elem1.getBoundingClientRect();
+    const heightToElem2 = elem2.getBoundingClientRect();
+    if (clientHeight - heightToElem1.top > 200 ) {
+        document.querySelector('.moonshine-card__header').style.left = '0';
+        document.querySelector('.moonshine-card__button').style.bottom = '0';
+    }
+    if (clientHeight - heightToElem2.top > 200 ) {
+        document.querySelector('.recipes-card__header').style.right = '0';
+        document.querySelector('.recipes-card__autor').style.right = '0';
+        document.querySelector('.recipes-card__button').style.bottom = '0';
+    }
+});
