@@ -541,6 +541,7 @@
     left: 850px;
     padding: 0 20px;
     margin-top: 300px;
+    transition: margin-top 1s;
 }
 
 
@@ -877,4 +878,6 @@
     }
 }
 
-//---------------------------------and footer----------------------------------------------//
+
+
+@import './@media.cscc';

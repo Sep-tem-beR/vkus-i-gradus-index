@@ -62,6 +62,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     let a = document.querySelector('.recipes-card__title');
     a.style.textShadow = pageYOffset/100 + 'px' + ' ' + pageYOffset/100 + 'px' + ' ' + pageYOffset/200 + 'px' +' '  + 'hsl(0, 0%, 50%)';
+    a.style.marginTop = (300 - pageYOffset/5) + 'px';
 });
 
 //------------------------------appearance of elements-----------------------//
