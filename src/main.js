@@ -84,3 +84,15 @@ window.addEventListener('scroll', function() {
         document.querySelector('.recipes-card__button').style.bottom = '0';
     }
 });
+
+
+
+
+
+
+function size() {
+    const div = document.querySelector('.size');
+    div.innerHTML = window.innerWidth + 'px' + document.documentElement.clientHeight + 'px'
+};
+
+setInterval(size, 20);                                     ;
