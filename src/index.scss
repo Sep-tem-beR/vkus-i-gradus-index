@@ -163,7 +163,8 @@
     margin-right: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 15vh;
 }
 
 .technologies {
@@ -574,8 +575,7 @@
 
 .moonshine-card {
     width: 100%;
-    height: 40vh;
-    min-height: 480px;
+    height: 480px;
     background: linear-gradient( 90deg, $white-transparent 20%, transparent);
     box-shadow: 0 0 40px $gray;
     margin: 150px 0;
@@ -684,8 +684,7 @@
 
 .recipes-card {
     width: 100%;
-    height: 40vh;
-    min-height: 480px;
+    height: 480px;
     background: linear-gradient( 270deg, $white-transparent 20%, transparent);
     box-shadow: 0 0 40px $gray;
     margin: 150px 0;
@@ -880,7 +879,7 @@
     transform: translateX(-100vw);
 }
 
-//------------------------and moonshine-menu ,,, recipes-menu------------------------------------//
+//------------------------end moonshine-menu ,,, recipes-menu------------------------------------//
 
 //------------------------------------footer----------------------------------------------//
 
@@ -894,9 +893,20 @@
     &__copywrite {
         font-size: 0.9rem;
         color: white;
-        margin: 100px 0 0 20px;
+        display: flex;
+        justify-content: center;
+        margin: 100px 0 0 0;
     }
 }
+
+
+
+
+
+
+
+
+
 
 .size {
     width: 200px;
